@@ -1,0 +1,6 @@
+<%= @expense.description %><br/>
+<%= @expense.date %><br/>
+
+<%= link_to 'Delete', @expense, method: :delete %><br/>
+<%= link_to "All Expenses", expenses_path() %><br/>
+<%= link_to "Create New Expense", new_expense_path() %><br/>

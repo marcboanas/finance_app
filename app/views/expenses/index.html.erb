@@ -1,0 +1,8 @@
+<h1>Expenses Index</h1>
+
+<% @expenses.each do |expense| %>
+<%= expense.description %><br/>
+<%= expense.date %><br/>
+<% end %>
+
+<%= link_to "Create New Expense", new_expense_path() %>
